@@ -21,7 +21,7 @@ Rectangle {
         height: 60
         radius: 10
         Text {
-            color: "#f59563"
+            color: "#ffffff"
             text: qsTr("2048")
             font.family: "微软雅黑"
             font.bold: true

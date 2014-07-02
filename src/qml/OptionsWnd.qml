@@ -78,7 +78,7 @@ Rectangle {
             onClicked: {
                 //scoreBoard.canPlay = true;
                 //optionsWnd.animHide.start();
-                Qt.quit();
+                window.hideWindow();
             }
         }
     }

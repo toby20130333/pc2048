@@ -22,6 +22,7 @@ Rectangle {
         id:battey
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
+        anchors.verticalCenterOffset: -20
         width: 22
         height: main.height/2
         //        color: "#00ffffff"
@@ -30,8 +31,8 @@ Rectangle {
         rotation: 180
         radius: 5
         property color oneColor: "lightsteelblue"
-        property color twoColor: "blue"
-        property color thirdColor: "blue"
+        property color twoColor: "#f59563"
+        property color thirdColor: "#8c7963"
         gradient: Gradient {
             GradientStop { position: 1.0; color: battey.oneColor }
             GradientStop { position: 0.5; color: battey.twoColor}
@@ -67,7 +68,7 @@ Rectangle {
         console.log("value  "+value)
         if(value<=4)
         {
-            rp.rpColor = "green";
+            rp.rpColor = "#f59563";
             rp.rpHeight= 7;
         }else if(value >4 && value <=5)
         {

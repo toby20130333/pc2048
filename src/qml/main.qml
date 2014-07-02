@@ -9,7 +9,7 @@ ApplicationWindow {
     id: window;
     visible: true
     width: 380
-    height: 480
+    height: 480    
     minimumHeight: height;
     minimumWidth: width;
     maximumHeight: height;
@@ -104,5 +104,36 @@ ApplicationWindow {
 
     Component.onDestruction: {
         scoreBoard.bestScore = Math.max(scoreBoard.bestScore, scoreBoard.score);
+    }
+    SequentialAnimation {
+        id:seqAnimation
+        NumberAnimation {
+            id: animShow2
+            target: window
+            properties: "opacity"
+            from: 1.0
+            to: 0.3
+            duration: 1000
+        }
+        NumberAnimation {
+            id: animShow
+            target: window
+            properties: "height"
+            from: 480
+            to: 0.0
+            duration: 500
+            easing.type: Easing.OutBack
+        }
+        ScriptAction { script: quitApp(); }
+    }
+
+    function hideWindow()
+    {
+        seqAnimation.stop();
+        seqAnimation.start();
+    }
+    function quitApp()
+    {
+        Qt.quit();
     }
 }

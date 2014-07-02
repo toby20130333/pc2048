@@ -8,7 +8,7 @@ Rectangle {
     radius: 3;
     visible: false;
     opacity: 0.0
-    color: "#bbada0"
+    color: "#00ffffff"
 
     property alias animateOpacity: animateOpacity
 
@@ -16,7 +16,7 @@ Rectangle {
         right: parent.right; rightMargin: 5
         left: parent.left; leftMargin: 5
         bottom: parent.bottom; bottomMargin: 5
-        top: parent.top; topMargin: 100
+        top: parent.top; topMargin: 110
     }
 
     Text {
