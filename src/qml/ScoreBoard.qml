@@ -1,4 +1,5 @@
 import QtQuick 2.0
+import QtGraphicalEffects 1.0
 import "logic.js" as Logic
 
 Rectangle {
@@ -20,13 +21,30 @@ Rectangle {
         height: 60
         radius: 10
         Text {
-            color: "white"
+            color: "#f59563"
             text: qsTr("2048")
             font.family: "微软雅黑"
             font.bold: true
             font.pixelSize: 36
             anchors.centerIn: parent
         }
+        LinearGradient {
+                        id:selected
+                        anchors.fill: parent
+                        start: Qt.point(0, 0)
+                        end: Qt.point(100, 60)
+                        gradient: Gradient {
+                            GradientStop { position: 0.0; color: "gray" }
+                            GradientStop { position: 0.5; color: "white" }
+                            GradientStop { position: 1.0; color: "gray" }
+                        }
+                        visible: true
+                        SequentialAnimation {
+                            running: true; loops: Animation.Infinite
+                            NumberAnimation { target:selected; property: "opacity"; to: 1.0; duration: 500}
+                            NumberAnimation { target:selected; property: "opacity"; to: 0.7; duration: 2000}
+                        }
+                    }
     }
 
     Rectangle {

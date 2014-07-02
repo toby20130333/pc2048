@@ -6,12 +6,12 @@ Rectangle {
     radius: 3;
 
     anchors {
-        right: parent.right; rightMargin: 5
-        left: parent.left; leftMargin: 5
-        bottom: parent.bottom; bottomMargin: 5
+        right: parent.right; rightMargin: 0
+        left: parent.left; leftMargin: 0
+        bottom: parent.bottom; bottomMargin: 0
         top: parent.top; topMargin: 110
     }
-    color: "white"
+    color: "#fbfaef"
 
     Grid {
         id: grid

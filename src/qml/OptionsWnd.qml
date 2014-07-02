@@ -15,13 +15,13 @@ Rectangle {
     width: 380
     height: 380
     radius: 3
-    color: "#ffffff"
+    color: "#fbfaef"
 
     anchors {
-        right: parent.right; rightMargin: 5
-        left: parent.left; leftMargin: 5
-        bottom: parent.bottom; bottomMargin: 5
-        top: parent.top; topMargin: 100
+        right: parent.right; rightMargin: 0
+        left: parent.left; leftMargin: 0
+        bottom: parent.bottom; bottomMargin: 0
+        top: parent.top; topMargin: 110
     }
     NumberAnimation {
         id: animShow
@@ -89,6 +89,7 @@ Rectangle {
             anchors.left: parent.left
             anchors.leftMargin: 20
             color: "#000000"
+            opacity: optionsWnd.opacity
         }
         Slider {
             id: sliderBoardSize
@@ -99,6 +100,7 @@ Rectangle {
             minimumValue: 0
             maximumValue: 3
             tickmarksEnabled: false
+            opacity: optionsWnd.opacity
             onValueChanged: {
                 var sum = 4 + value;
                 labelSlider.text = sum + "x" + sum;
@@ -131,6 +133,7 @@ Rectangle {
             font.bold: true
             font.pointSize: 23
             font.family: "微软雅黑"
+            opacity: optionsWnd.opacity
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
         }
