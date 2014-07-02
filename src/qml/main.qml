@@ -81,6 +81,7 @@ ApplicationWindow {
     }
     OptionsWnd {
         id: optionsWnd;
+        opacity: 0
         onApply: {
             scoreBoard.canPlay = true;
             var value = boardSize + 4;
@@ -93,7 +94,7 @@ ApplicationWindow {
         id:gameTips
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
-        anchors.verticalCenterOffset: 24
+        anchors.verticalCenterOffset: 30
         opacity: 0.0
     }
     Component.onCompleted: {
