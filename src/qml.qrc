@@ -10,5 +10,6 @@
         <file>qml/logic.js</file>
         <file>DayOfView.qml</file>
         <file>GameTips.qml</file>
+        <file>qml/SliderView.qml</file>
     </qresource>
 </RCC>

@@ -16,6 +16,7 @@ ApplicationWindow {
     maximumWidth: width;
     title: qsTr("2048 PC版本")
     color: "white";
+    flags: Qt.FramelessWindowHint
     Settings {
         id: settigns;
         property alias columns: board.col;

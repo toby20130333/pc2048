@@ -4,7 +4,6 @@ Rectangle {
     property int col: 4
     property int row: 4
     radius: 3;
-
     anchors {
         right: parent.right; rightMargin: 0
         left: parent.left; leftMargin: 0
@@ -12,7 +11,6 @@ Rectangle {
         top: parent.top; topMargin: 110
     }
     color: "#fbfaef"
-
     Grid {
         id: grid
         anchors.fill: parent;

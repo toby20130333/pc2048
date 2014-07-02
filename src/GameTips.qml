@@ -10,7 +10,7 @@ Item {
         id: labelTips
         anchors.centerIn: parent
         opacity: gametips.opacity
-        color: "red"
+        color: "#D74F37"
         text: gameStatus
         font.bold: true
         font.pointSize: 23

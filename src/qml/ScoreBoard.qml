@@ -31,11 +31,11 @@ Rectangle {
         LinearGradient {
                         id:selected
                         anchors.fill: parent
-                        start: Qt.point(0, 0)
-                        end: Qt.point(100, 60)
+                        start: Qt.point(10, 10)
+                        end: Qt.point(90, 50)
                         gradient: Gradient {
                             GradientStop { position: 0.0; color: "gray" }
-                            GradientStop { position: 0.5; color: "white" }
+                            GradientStop { position: 0.5; color: "#8c7963" }
                             GradientStop { position: 1.0; color: "gray" }
                         }
                         visible: true
@@ -147,7 +147,6 @@ Rectangle {
         anchors.top: btnNewGame.bottom
         anchors.topMargin: 2
         font.family: "微软雅黑"
-        font.bold: true
         font.pixelSize: 12
     }
 }
